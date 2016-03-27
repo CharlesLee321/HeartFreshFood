@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Android="http://schemas.android.com/tools"
+    >
+    <!-- 默认时的背景图片-->
+    <item Android:drawable="@drawable/society_viewpager_top_button_unselected" />
+    <!-- 没有焦点时的背景图片 -->
+    <item
+        Android:state_window_focused="false"
+        android:drawable="@drawable/society_viewpager_top_button_unselected"
+        />
+    <!-- 非触摸模式下获得焦点并单击时的背景图片 -->
+    <item
+        Android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable= "@drawable/society_viewpager_top_button_selected"
+        />
+    <!-- 触摸模式下单击时的背景图片-->
+    <item
+        Android:state_focused="false"
+        Android:state_pressed="true"
+        Android:drawable="@drawable/society_viewpager_top_button_selected"
+        />
+    <!--选中时的图片背景-->
+    <item
+        Android:state_selected="true"
+        android:drawable="@drawable/society_viewpager_top_button_selected"
+        />
+    <!--获得焦点时的图片背景-->
+    <item
+        Android:state_focused="true"
+        Android:drawable="@drawable/society_viewpager_top_button_selected"
+        />
+</selector>
